@@ -1,7 +1,9 @@
 # Interactive-SIRmodel-UI
 
 ### **An interactive program to visualize the influence of certain parameters on the course of the pandemic / herd immunity.** 
-The basic underlying mathematical model of the program is the SIR-model. Up to 4 models can be plotted simultaneously. Both an executable file, as well as the source code (Python) are freely available. The UI was made using the Pygame-library. 
+The basic underlying mathematical model of the program is the SIR-model. Up to 4 models can be plotted simultaneously. The UI was made using Python and the Pygame-library. Due to GitHub's file size limit, an executable file of the source code is available via the following link:
+https://drive.google.com/drive/folders/1dJDuhwRIn6pqgS-xkgCtONLGiq71wt_M?usp=sharing
+
 
 **The program shows 2 plots at all times.** The upper plot shows the percentages of Infected people over time. For the plot below, the user can select to either plot the percentage of immune people (I+R), or the reproduction rate R over time. The reproduction rate R was calculated according to the following equation, with R0=beta/gamma, pC = reduction in transmission rates from safety measures, pI = reduction of transmission rates from virus immunities.
 
