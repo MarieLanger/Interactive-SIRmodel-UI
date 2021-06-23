@@ -46,7 +46,7 @@ P_H_var | Additional parameter that are used for the population heterogeneity mo
 
 
 
-# Extensions of classical SIR-model
+# Extensions of SIR-model
 
 ### Lockdown
 
