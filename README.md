@@ -1,14 +1,14 @@
 # Interactive-SIRmodel-UI
 
-An interactive program to visualize the influence of certain parameters on herd immunity. The used basic underlying mathematical model is the SIR-model. 
+### **An interactive program to visualize the influence of certain parameters on the course of the pandemic / herd immunity.** 
+The basic underlying mathematical model of the program is the SIR-model. Up to 4 models can be plotted simultaneously. Both an executable file, as well as the source code (Python) are freely available. The UI was made using the Pygame-library. 
 
-The upper plot shows the percentages of Infected people over time. For the plot below, the user can select to either plot the percentage of immune people (I+R), or the reproduction rate R over time. The R-value was calculated according to the following equation, with R0=beta/gamma, pC = reduction in transmission rates from safety measures, pI = reduction of transmission rates from virus immunities.
+**The program shows 2 plots at all times.** The upper plot shows the percentages of Infected people over time. For the plot below, the user can select to either plot the percentage of immune people (I+R), or the reproduction rate R over time. The reproduction rate R was calculated according to the following equation, with R0=beta/gamma, pC = reduction in transmission rates from safety measures, pI = reduction of transmission rates from virus immunities.
 
 ```math
 R = (1-pC)*(1-pI)*R0
 ```
 
-The model contains N=1000 individuals in the population. The initial values of S, I and R at t=1 are S0=999, I0=1, and R=0. Up to 4 models can be plotted simultaneously.
 
 
 # Controls
@@ -21,9 +21,6 @@ X-key | Selecting/ Deselecting a parameter
 R-key | Switching the plot below to either: <br/> • Show percentage of immune people <br/> • Show R-value over time
 C-/E-/M-/P-keys | Set preset variables for COVID-19, Ebola, Measles or Polio respectively
 
-
-  
-  
 
 
 # Parameters of the program
@@ -38,7 +35,7 @@ Lockdown? | Boolean parameter that controls whether or not a lockdown is present
 L_start | Start date of lockdown (unit: days)
 L_duration | Duration of lockdown (unit: days)
 L_redRate | Reduction rate of contacts during lockdown (1: No reduction, 0: Strict lockdown with zero contacts)
-P_Type? | Describes the type of population.<sup>1</sup> Can have 3 different values:<br/> • Homogen: Homogeneous population <br/> • Gamma<sup>2</sup>: heterogeneous population according to [.....] <br/> • Matrix<sup>2</sup>: Heterogeneous population according to [….]
+P_Type? | Describes the type of population.<sup>1</sup> Can have 3 different values:<br/> • Homogen: Homogeneous population <br/> • Gamma<sup>2</sup>: Heterogeneous population according to Britton et al. (2020) <br/> • Matrix<sup>2</sup>: Heterogeneous population according to Neipel et al. (2020)
 P_H_var | Additional parameter that are used for the population heterogeneity models. <br/> • “Gamma”: Todo: ?? <br/> • “Matrix”: Parameter used by SEIR-model. (Inverse of the incubation period of the disease)
 
 <sup>1</sup> Lockdown?=False and P_Type?=”Homogen” correspond to the classical SIR-model. <br/>
@@ -74,7 +71,18 @@ The initial behaviour of the infected population depends on which of the six age
 ### Population heterogenity "Gamma"
 This extension is based on the paper by Neipel et al. (2020).
 
--TODO: descriptions-
+-TODO: description-
+
+
+
+# Technical notes
+- Up to 4 models can be plotted at once (mo, m1, m2, m3)
+- R0-value gets printed automatically (R0=beta/gamma)
+- The model contains N=1000 individuals in the population. The initial values of S, I and R at t=1 are S0=999, I0=1, and R=0. 
+
+- "classes"-folder and "data"-folder have to be in the same folder as "HerdImmunity.exe"/ "HerdImmunity.py"
+- "HerdImmunity.exe" might take between 30-60 seconds to open
+- "HerdImmunity.py" is the source code of "HerdImmunity.exe"
 
 
 # Credits
@@ -109,7 +117,6 @@ DISCLAIMER REGARDING FONT USAGE:
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
 
 # Bug report
-
 If you encounter any bugs, please send a mail to marie.langer@mailbox.tu-dresden.de
 
 
