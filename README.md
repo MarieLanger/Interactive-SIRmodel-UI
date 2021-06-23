@@ -1,6 +1,6 @@
 # Interactive-SIRmodel-UI
 
-### **An interactive program to visualize the influence of certain parameters on the course of the pandemic / herd immunity.** 
+### **An interactive program to visualize the influence of various parameters on the course of the pandemic / herd immunity.** 
 The basic underlying mathematical model of the program is the SIR-model. Up to 4 models can be plotted simultaneously. The UI was made using Python and the Pygame-library. The source code is freely available on GitHub. An executable file can be downloaded via the following link (due to GitHub's file size limit).
 
 https://drive.google.com/drive/folders/1dJDuhwRIn6pqgS-xkgCtONLGiq71wt_M?usp=sharing
