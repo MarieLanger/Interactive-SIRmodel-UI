@@ -80,7 +80,7 @@ It was implemented by introducing the mentioned additional gamma-term to the SIR
 
 
 # Technical notes
-- Up to 4 models can be plotted at once (mo, m1, m2, m3)
+- Up to 4 models can be plotted at once (m0, m1, m2, m3)
 - R0-value gets printed automatically (R0=beta/gamma)
 - The model contains N=1000 individuals in the population. The initial values of S, I and R at t=1 are S0=999, I0=1, and R=0. 
 
