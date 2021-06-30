@@ -62,7 +62,8 @@ We can then split the course of time t=[1:200] into 3 time regions ("before lock
 
 ### Population heterogenity "Matrix"
 
-This extension is based on the paper by Britton et al. (2020).
+This extension is based on the paper:
+Britton T., Ball F., Trapman P., A mathematical model reveals the influence of population heterogeneity on herd immunity to SARS-CoV-2. Science 369, 846–849 (2020) https://science.sciencemag.org/content/sci/369/6505/846.full.pdf
 
 Here a SEIR Model is used, which considers an additional exposed population. Exposed individuals are not infectious during the incubation period of the disease. 
 We consider six different age groups with different transmission rates with respect to each of these six groups. This builds a 6x6 contact matrix beta. The P_H_var and gamma values, which are the inverse of the incubation and infectious period respectively, are assumed to be constant for these six age groups. 
@@ -72,7 +73,10 @@ We start with one individual being exposed at time t=0 and the rest of the popul
 The initial behaviour of the infected population depends on which of the six age groups is exposed first.  The curve of the infected population might show a small initial peak. This behaviour of the model is because the first individual gets infected after the incubation period of the disease and this same individual joins the group of the removed population R while the next set of individuals, who got exposed, are still in their incubation period.
 
 ### Population heterogenity "Gamma"
-This extension is based on the paper by Neipel et al. (2020) and was implemented by introducing the mentioned additional gamma-term to the SIR-model.
+This extension is based on the paper:
+Neipel J., Bauermann J., Bo S., Harmon T., Jülicher F., Power-law population heterogeneity governs epidemic waves. PloS One 15, e0239678 (2020). https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0239678
+
+It was implemented by introducing the mentioned additional gamma-term to the SIR-model.
 
 
 # Technical notes
