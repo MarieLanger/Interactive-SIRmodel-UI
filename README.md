@@ -39,7 +39,7 @@ L_start | Start date of lockdown (unit: days)
 L_duration | Duration of lockdown (unit: days)
 L_redRate | Reduction rate of contacts during lockdown (1: No reduction, 0: Strict lockdown with zero contacts)
 P_Type? | Describes the type of population.<sup>1</sup> Can have 3 different values:<br/> • Homogen: Homogeneous population <br/> • Gamma<sup>2</sup>: Heterogeneous population according to Britton et al. (2020) <br/> • Matrix<sup>2</sup>: Heterogeneous population according to Neipel et al. (2020)
-P_H_var | Additional parameter that are used for the population heterogeneity models. <br/> • “Gamma”: Todo: ?? <br/> • “Matrix”: Parameter used by SEIR-model. (Inverse of the incubation period of the disease)
+P_H_var | Additional parameter that are used for the population heterogeneity models. <br/> • “Gamma”: Alpha-parameter <br/> • “Matrix”: Parameter used by SEIR-model. (Inverse of the incubation period of the disease)
 
 <sup>1</sup> Lockdown?=False and P_Type?=”Homogen” correspond to the classical SIR-model. <br/>
 <sup>2</sup> See "extensions of SIR-model" below
@@ -72,10 +72,7 @@ We start with one individual being exposed at time t=0 and the rest of the popul
 The initial behaviour of the infected population depends on which of the six age groups is exposed first.  The curve of the infected population might show a small initial peak. This behaviour of the model is because the first individual gets infected after the incubation period of the disease and this same individual joins the group of the removed population R while the next set of individuals, who got exposed, are still in their incubation period.
 
 ### Population heterogenity "Gamma"
-This extension is based on the paper by Neipel et al. (2020).
-
--TODO: description-
-
+This extension is based on the paper by Neipel et al. (2020) and was implemented by introducing the mentioned additional gamma-term to the SIR-model.
 
 
 # Technical notes
