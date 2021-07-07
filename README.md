@@ -92,7 +92,7 @@ It was implemented by introducing the mentioned additional gamma-term to the SIR
 # Credits
 - **Gamma-extension**: Moritz Schramm
 - **Basic SIR-model, Matrix-extension**: Tom Richard Vargis
-- **Pygame-UI-interface, implementation of lockown-measurements, icon.png**: Marie Langer
+- **Description of the program in README-file, Pygame-UI-interface, implementation of lockown-measurements, icon.png**: Marie Langer
 - **Font**: TYPEW.ttf by Johan Holmdahl
 
 DISCLAIMER REGARDING FONT USAGE:
